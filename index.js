@@ -14,7 +14,6 @@ module.exports = {
     "@typescript-eslint",
     "@tanstack/query",
     "json-format",
-    "regex",
     "simple-import-sort",
     "sort-destructure-keys",
     "sort-keys-fix",
