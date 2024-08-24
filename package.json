@@ -1,0 +1,22 @@
+{
+  "name": "@irvin93d/eslint-config-next",
+  "version": "1.0.0",
+  "description": "Strictly typed eslint config settings for nextjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irvin93d/eslint-config-next.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Duane Irvin <irvin93d@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irvin93d/eslint-config-next/issues"
+  },
+  "homepage": "https://github.com/irvin93d/eslint-config-next#readme"
+}
