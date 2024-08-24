@@ -4,12 +4,13 @@
 module.exports = {
   extends: [
     "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:@tanstack/eslint-plugin-query/recommended",
     "plugin:tailwindcss/recommended",
     "prettier",
   ],
+  parser: "@typescript-eslint/parser",
   plugins: [
     "@typescript-eslint",
     "@tanstack/query",
@@ -24,10 +25,12 @@ module.exports = {
       "warn",
       { fixStyle: "inline-type-imports", prefer: "type-imports" },
     ],
+    "@typescript-eslint/no-confusing-void-expression": "off",
     "@typescript-eslint/no-misused-promises": [
       "warn",
       { checksVoidReturn: { attributes: false } },
     ],
+
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
@@ -38,6 +41,10 @@ module.exports = {
       },
     ],
     "@typescript-eslint/require-await": "off",
+    "@typescript-eslint/restrict-template-expressions": [
+      "warn",
+      { allowNumber: true },
+    ],
     curly: "warn",
     "react/jsx-sort-props": [
       "warn",
